@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Amboseli HR</title>
+    <meta
+      name="description"
+      content="About Amboseli HR - Premium HR Consultancy, Recruitment and Staffing Solutions."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* About Specific Styles */
+      .page-hero {
+        height: 60vh;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background:
+          linear-gradient(rgba(5, 5, 5, 0.8), rgba(5, 5, 5, 0.9)),
+          url("images/Elevate Your Employer Brand! 🌟.jpg") center/cover;
+        position: relative;
+      }
+      .breadcrumb {
+        color: var(--primary);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-top: 15px;
+      }
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+      .service-card i {
+        font-size: 2.5rem;
+        color: var(--primary);
+        margin-bottom: 20px;
+        display: block;
+      }
+      .framework-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-bottom: 50px;
+      }
+      .framework-card {
+        text-align: center;
+      }
+      .framework-card .number-badge {
+        width: 40px;
+        height: 40px;
+        background: var(--primary);
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin: 0 auto 20px;
+        box-shadow: var(--glow-shadow);
+      }
+      .industries-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+      .industry-card {
+        padding: 30px;
+        border-top: 3px solid var(--primary);
+      }
+      .industry-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+      }
+      .clients-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+      .clients-bullets {
+        margin-bottom: 30px;
+      }
+      .clients-bullets li {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 1.1rem;
+      }
+      .clients-bullets li i {
+        color: var(--primary);
+      }
+      .clients-right-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      .testimonial-card {
+        grid-column: span 2;
+        padding: 40px;
+      }
+      @media (max-width: 992px) {
+        .services-grid,
+        .framework-grid,
+        .industries-grid,
+        .clients-section {
+          grid-template-columns: 1fr;
+        }
+        .clients-right-grid {
+          grid-template-columns: 1fr;
+        }
+        .testimonial-card {
+          grid-column: span 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fade-in-up">
+      <a href="index.html" class="nav-brand">
+        <img src="images/logo-2.png" alt="Logo" class="logo-img" />
+        <div class="brand-text"></div>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Us</a>
+        <a href="employers.html">Employers</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="search.html" class="search-icon"
+          ><i class="fas fa-search"></i
+        ></a>
+        <a href="#" class="btn btn-primary">Get Started</a>
+      </div>
+
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="glow-bg"></div>
+      <div class="fade-in-up">
+        <h1 class="hero-title">About Amboseli HR</h1>
+        <div class="breadcrumb">HOME / ABOUT US</div>
+      </div>
+    </section>
+
+    <!-- Our Services -->
+    <section>
+      <div class="section-header fade-in-up">
+        <h2 class="section-title">Our Services</h2>
+        <p style="max-width: 600px; margin: 0 auto">
+          Premium HR services tailored to your organizational needs.
+        </p>
+      </div>
+      <div class="services-grid fade-in-up stagger-1">
+        <div class="glass-card service-card">
+          <i class="fas fa-handshake"></i>
+          <h3>1. Outsourcing</h3>
+          <p>
+            Providing comprehensive outsourcing solutions to streamline
+            operations and enhance efficiency across your business processes.
+          </p>
+        </div>
+        <div class="glass-card service-card">
+          <i class="fas fa-cogs"></i>
+          <h3>2. HR Solutions Offered</h3>
+          <p>
+            End-to-end human resource management tailored to optimize workforce
+            performance and maintain compliance.
+          </p>
+        </div>
+        <div class="glass-card service-card">
+          <i class="fas fa-globe-americas"></i>
+          <h3>3. Global Human Search</h3>
+          <p>
+            Leveraging our international network to identify and recruit
+            top-tier talent from across the globe.
+          </p>
+        </div>
+        <div class="glass-card service-card">
+          <i class="fas fa-user-tie"></i>
+          <h3>4. Executive Search</h3>
+          <p>
+            Specialized recruitment services focusing on C-level and senior
+            management professionals for leadership roles.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HR Solutions Framework -->
+    <section style="background-color: var(--bg-secondary)">
+      <div class="glow-bg" style="top: 20%; left: -20%"></div>
+      <div class="section-header fade-in-up">
+        <h2 class="section-title">HR Solutions Framework</h2>
+        <p style="max-width: 700px; margin: 0 auto">
+          Comprehensive human resource management solutions designed for your
+          success.
+        </p>
+      </div>
+      <div class="framework-grid fade-in-up stagger-2">
+        <div class="glass-card framework-card">
+          <div class="number-badge">1</div>
+          <h3>Recruitment Process Setup</h3>
+          <p>Designing and implementing effective recruitment workflows.</p>
+        </div>
+        <div class="glass-card framework-card">
+          <div class="number-badge">2</div>
+          <h3>HR Handbook Rollout</h3>
+          <p>Creating comprehensive policy manuals and employee handbooks.</p>
+        </div>
+        <div class="glass-card framework-card">
+          <div class="number-badge">3</div>
+          <h3>Compensation & Benefits</h3>
+          <p>Structuring competitive compensation and benefits packages.</p>
+        </div>
+        <div class="glass-card framework-card">
+          <div class="number-badge">4</div>
+          <h3>Employee Retention Programs</h3>
+          <p>Developing strategies to retain top talent and reduce turnover.</p>
+        </div>
+        <div class="glass-card framework-card">
+          <div class="number-badge">5</div>
+          <h3>Performance Appraisal Systems</h3>
+          <p>Implementing fair and effective performance evaluation methods.</p>
+        </div>
+        <div class="glass-card framework-card">
+          <div class="number-badge">6</div>
+          <h3>Legal/Statutory Compliance</h3>
+          <p>
+            Ensuring full adherence to labor laws and statutory regulations.
+          </p>
+        </div>
+      </div>
+      <div class="text-center fade-in-up" style="text-align: center">
+        <a
+          href="contact.html"
+          class="btn btn-primary"
+          style="padding: 18px 45px; font-size: 1.1rem"
+          >Talk to Our Consultants <i class="fas fa-arrow-right"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- Industries We Serve -->
+    <section>
+      <div class="section-header fade-in-up">
+        <h2 class="section-title">Industries We Serve</h2>
+        <p style="max-width: 600px; margin: 0 auto">
+          Specialized recruitment across diverse technological and business
+          sectors.
+        </p>
+      </div>
+      <div class="industries-grid fade-in-up stagger-1">
+        <div class="glass-card industry-card">
+          <i
+            class="fas fa-laptop-code"
+            style="font-size: 2rem; color: var(--primary); margin-bottom: 15px"
+          ></i>
+          <h3>IT Software & Services</h3>
+          <p>
+            Providing recruitment solutions for software companies, startups,
+            and enterprise technology firms.
+          </p>
+        </div>
+        <div class="glass-card industry-card">
+          <i
+            class="fas fa-microchip"
+            style="font-size: 2rem; color: var(--primary); margin-bottom: 15px"
+          ></i>
+          <h3>Semiconductors</h3>
+          <p>
+            Supporting semiconductor and electronics industries with specialized
+            technical talent acquisition.
+          </p>
+        </div>
+        <div class="glass-card industry-card">
+          <i
+            class="fas fa-satellite-dish"
+            style="font-size: 2rem; color: var(--primary); margin-bottom: 15px"
+          ></i>
+          <h3>Telecommunications</h3>
+          <p>
+            Delivering skilled professionals for networking, telecom
+            infrastructure, and communication technologies.
+          </p>
+        </div>
+        <div class="glass-card industry-card">
+          <i
+            class="fas fa-headset"
+            style="font-size: 2rem; color: var(--primary); margin-bottom: 15px"
+          ></i>
+          <h3>Outsourcing</h3>
+          <p>
+            Helping businesses streamline operations with efficient outsourcing
+            and workforce solutions.
+          </p>
+        </div>
+        <div class="glass-card industry-card">
+          <i
+            class="fas fa-chart-pie"
+            style="font-size: 2rem; color: var(--primary); margin-bottom: 15px"
+          ></i>
+          <h3>Consulting & Financial</h3>
+          <p>
+            Recruitment support for consulting firms, finance organizations, and
+            business advisory services.
+          </p>
+        </div>
+        <div class="glass-card industry-card">
+          <i
+            class="fas fa-tools"
+            style="font-size: 2rem; color: var(--primary); margin-bottom: 15px"
+          ></i>
+          <h3>Engineering R&D</h3>
+          <p>
+            Connecting organizations with engineering experts and
+            research-driven professionals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Clients -->
+    <section
+      class="cta-section"
+      style="
+        text-align: left;
+        background: none;
+        border: none;
+        padding-top: 50px;
+      "
+    >
+      <div class="glow-bg" style="right: -200px; bottom: 0"></div>
+      <div class="clients-section">
+        <div class="fade-in-left">
+          <div class="section-title">
+            <span
+              style="
+                color: var(--primary);
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+              "
+              >Partnerships</span
+            >
+          </div>
+          <h2 style="margin-bottom: 25px">Our Clients</h2>
+          <p style="margin-bottom: 30px">
+            We believe in building long-lasting relationships based on trust,
+            transparency, and results. Our clients range from innovative
+            startups to established Fortune 500 companies across the globe.
+          </p>
+
+          <ul class="clients-bullets">
+            <li>
+              <i class="fas fa-check-circle"></i> Proven track record in
+              delivery
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Long-term strategic
+              partnerships
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Quality talent solutions
+              guarantee
+            </li>
+          </ul>
+
+          <div style="display: flex; gap: 20px">
+            <a href="contact.html" class="btn btn-primary">Partner With Us</a>
+            <a href="#" class="btn btn-secondary">Contact Team</a>
+          </div>
+        </div>
+
+        <div class="clients-right-grid fade-in-right stagger-2">
+          <div class="glass-card testimonial-card">
+            <i
+              class="fas fa-quote-left"
+              style="
+                font-size: 3rem;
+                color: var(--border-color);
+                position: absolute;
+                top: 20px;
+                right: 30px;
+              "
+            ></i>
+            <p
+              style="
+                font-size: 1.2rem;
+                font-style: italic;
+                margin-bottom: 20px;
+                position: relative;
+                z-index: 1;
+              "
+            >
+              "Amboseli HR has been instrumental in scaling our technical teams.
+              Their understanding of our industry requirements and the quality
+              of candidates they provide is unmatched."
+            </p>
+            <div style="display: flex; align-items: center; gap: 15px">
+              <div
+                style="
+                  width: 50px;
+                  height: 50px;
+                  background: var(--primary);
+                  border-radius: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-weight: bold;
+                  color: #fff;
+                "
+              >
+                JD
+              </div>
+              <div>
+                <h4 style="margin: 0">John Doe</h4>
+                <p style="margin: 0; font-size: 0.9rem; color: var(--primary)">
+                  Director of HR, TechGlobal
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="glass-card stat-card" style="padding: 30px 20px">
+            <h2 style="color: var(--primary); font-size: 2.5rem">98%</h2>
+            <p>Client Satisfaction</p>
+          </div>
+          <div class="glass-card stat-card" style="padding: 30px 20px">
+            <h2 style="color: var(--primary); font-size: 2.5rem">30+</h2>
+            <p>Years Experience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-bg-glow"></div>
+      <div class="footer-content fade-in-up">
+        <div class="footer-brand">
+          <div class="nav-brand">
+            <img src="images/logo-2.png" alt="Logo" class="logo-img" />
+            <div class="brand-text">Amboseli HR</div>
+          </div>
+          <p>
+            Connecting exceptional talent with visionary organizations through
+            innovative recruitment solutions.
+          </p>
+          <div class="footer-quote">
+            <p>"Our Talent is Finding Yours"</p>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="employers.html">Employers</a></li>
+            <li><a href="candidates.html">Candidates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-services">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="about.html#services">Executive Search</a></li>
+            <li><a href="about.html#services">Recruitment Services</a></li>
+            <li><a href="about.html#services">Talent Acquisition</a></li>
+            <li><a href="about.html#services">Staffing Solutions</a></li>
+            <li><a href="about.html#services">HR Consulting</a></li>
+            <li><a href="about.html#services">Candidate Screening</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <p>
+              Amboseli Professional Associates Pvt. Ltd.<br />135&136, Raheja
+              Arcade, Koramangala<br />Bangalore - 560095
+            </p>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <p>+91 80 25534924<br />+91 80 25537162</p>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <p>info@amboselihr.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          &copy; 2026 Amboseli HR. All Rights Reserved.
+        </div>
+        <div class="footer-bottom-center">
+          Powered by <span class="text-primary">Akash Rajarathinam</span>
+        </div>
+        <div class="footer-bottom-right">
+          <a href="mailto:akash@atyourservice.ind.in"
+            >akash@atyourservice.ind.in</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+  </body>
+</html>

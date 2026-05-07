@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Employers - Amboseli HR</title>
+    <meta
+      name="description"
+      content="HR Services & Recruitment Company. Find the right talent for your organization with Amboseli HR."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Employers Specific Styles */
+      .page-hero {
+        padding-top: 150px;
+        padding-bottom: 100px;
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        background:
+          linear-gradient(
+            to right,
+            rgba(5, 5, 5, 0.95) 20%,
+            rgba(5, 5, 5, 0.7) 100%
+          ),
+          url("images/32 Hidden Talent Examples [And How To Find Yours].jpg")
+            center/cover;
+        position: relative;
+      }
+
+      .hero-container {
+        max-width: 900px;
+        width: 100%;
+        margin: 0;
+        position: relative;
+        z-index: 2;
+      }
+
+      .breadcrumb {
+        color: var(--primary);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      .hero-title {
+        font-size: 4.5rem;
+        line-height: 1.1;
+        margin-bottom: 30px;
+      }
+
+      .hero-text {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        margin-bottom: 40px;
+        max-width: 750px;
+        color: #ccc;
+      }
+
+      .process-section {
+        background-color: var(--bg-primary);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .process-timeline {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 15px;
+        position: relative;
+        margin-top: 80px;
+      }
+
+      .process-card {
+        flex: 1;
+        min-width: 0; /* allows flex items to shrink properly */
+        position: relative;
+        text-align: center;
+        padding: 50px 20px 30px;
+        background: var(--glass-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 15px;
+        transition: var(--transition);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .process-card:hover {
+        border-color: var(--primary);
+        box-shadow: var(--glow-shadow-strong);
+        transform: translateY(-5px);
+      }
+
+      .process-icon-circle {
+        width: 70px;
+        height: 70px;
+        background: #111;
+        color: var(--text-white);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        position: absolute;
+        top: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 0 20px rgba(255, 138, 43, 0.4);
+        border: 2px solid var(--primary);
+        z-index: 2;
+      }
+
+      .process-badge {
+        display: inline-block;
+        background: rgba(255, 138, 43, 0.15);
+        color: var(--primary);
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding: 4px 12px;
+        border-radius: 20px;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+      }
+
+      .process-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .process-card p {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        margin-bottom: 25px;
+        line-height: 1.5;
+      }
+
+      .process-details {
+        text-align: left;
+        margin-top: auto;
+      }
+
+      .process-details h4 {
+        color: var(--primary);
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
+
+      .process-details ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .process-details li {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        margin-bottom: 8px;
+        position: relative;
+        padding-left: 15px;
+        line-height: 1.4;
+      }
+
+      .process-details li::before {
+        content: "•";
+        color: var(--primary);
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .process-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary);
+        font-size: 1.5rem;
+        padding-top: 150px;
+        opacity: 0.7;
+      }
+
+      .cta-bottom {
+        text-align: center;
+        padding: 100px 5%;
+        background: radial-gradient(
+          circle at top,
+          rgba(255, 138, 43, 0.1) 0%,
+          var(--bg-secondary) 100%
+        );
+      }
+
+      .bottom-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 60px;
+      }
+
+      @media (max-width: 1200px) {
+        .process-timeline {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 30px;
+        }
+        .process-card {
+          flex: 0 0 calc(33.333% - 30px);
+        }
+        .process-arrow {
+          display: none;
+        }
+      }
+
+      @media (max-width: 992px) {
+        .process-card {
+          flex: 0 0 calc(50% - 30px);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .process-timeline {
+          flex-direction: column;
+          align-items: center;
+        }
+        .process-card {
+          width: 100%;
+          max-width: 400px;
+          margin-bottom: 40px;
+        }
+        .bottom-stats {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fade-in-up">
+      <a href="index.html" class="nav-brand">
+        <img src="images/logo-2.png" alt="Logo" class="logo-img" />
+        <div class="brand-text"></div>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="employers.html" class="active">Employers</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="search.html" class="search-icon"
+          ><i class="fas fa-search"></i
+        ></a>
+        <a href="#" class="btn btn-primary">Get Started</a>
+      </div>
+
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div
+        class="glow-bg"
+        style="
+          top: 40%;
+          left: 10%;
+          transform: translate(-50%, -50%);
+          opacity: 0.4;
+        "
+      ></div>
+      <div class="hero-container fade-in-up">
+        <div class="breadcrumb">HOME / EMPLOYERS</div>
+        <h1 class="hero-title">
+          HR Services &<br /><span class="text-primary"
+            >Recruitment Company</span
+          >
+        </h1>
+        <p class="hero-text">
+          Find the perfect talent for your organization. We deliver exceptional
+          recruitment solutions tailored to your unique business requirements.
+        </p>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap">
+          <a href="#hiring-process" class="btn btn-primary"
+            >Hire Talent <i class="fas fa-arrow-right"></i
+          ></a>
+          <a href="contact.html" class="btn btn-secondary"
+            ><i class="far fa-calendar-alt"></i> Schedule Consultation</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Hiring Process Section -->
+    <section id="hiring-process" class="process-section">
+      <div
+        class="glow-bg"
+        style="
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 800px;
+          height: 800px;
+          opacity: 0.3;
+        "
+      ></div>
+
+      <div class="section-header fade-in-up">
+        <h2 style="font-size: 3rem; margin-bottom: 10px">
+          How the APA Hiring Process Works
+        </h2>
+        <p style="color: var(--primary); font-size: 1.2rem">
+          A streamlined journey from client requirements to final candidate
+          selection
+        </p>
+      </div>
+
+      <div class="process-timeline fade-in-up stagger-1">
+        <!-- Card 1 -->
+        <div class="process-card">
+          <div class="process-icon-circle"><i class="fas fa-users"></i></div>
+          <div class="process-badge">STEP 1</div>
+          <h3>CLIENT INITIATION</h3>
+          <p>Clients / Candidates approach APA to begin the hiring process.</p>
+          <div class="process-details">
+            <h4>Details:</h4>
+            <ul>
+              <li>Job Description</li>
+              <li>Recommended Qualifications</li>
+              <li>Required Experience</li>
+              <li>Company Profile</li>
+              <li>Work Environment</li>
+              <li>Career Prospects & Perks</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="process-arrow"><i class="fas fa-chevron-right"></i></div>
+
+        <!-- Card 2 -->
+        <div class="process-card">
+          <div class="process-icon-circle"><i class="fas fa-search"></i></div>
+          <div class="process-badge">STEP 2</div>
+          <h3>CANDIDATE SOURCING</h3>
+          <p>APA begins sourcing potential candidates.</p>
+          <div class="process-details">
+            <h4>Details:</h4>
+            <ul>
+              <li>Uses in-house database</li>
+              <li>Identifies professionals from relevant companies</li>
+              <li>Posts job advertisements (if required)</li>
+              <li>Connects with potential candidates</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="process-arrow"><i class="fas fa-chevron-right"></i></div>
+
+        <!-- Card 3 -->
+        <div class="process-card">
+          <div class="process-icon-circle">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="process-badge">STEP 3</div>
+          <h3>INITIAL SCREENING</h3>
+          <p>APA evaluates candidate suitability.</p>
+          <div class="process-details">
+            <h4>Details:</h4>
+            <ul>
+              <li>Conducts initial discussions</li>
+              <li>Assesses candidate fit</li>
+              <li>Decides progression to next stage</li>
+              <li>Collects resumes</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="process-arrow"><i class="fas fa-chevron-right"></i></div>
+
+        <!-- Card 4 -->
+        <div class="process-card">
+          <div class="process-icon-circle"><i class="fas fa-file-alt"></i></div>
+          <div class="process-badge">STEP 4</div>
+          <h3>EVALUATION & SHORTLISTING</h3>
+          <p>APA performs detailed evaluation.</p>
+          <div class="process-details">
+            <h4>Details:</h4>
+            <ul>
+              <li>Reviews resumes from database & applications</li>
+              <li>Shortlists qualified candidates</li>
+              <li>Explains client requirements</li>
+              <li>Gets candidate approval to share profiles</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="process-arrow"><i class="fas fa-chevron-right"></i></div>
+
+        <!-- Card 5 -->
+        <div class="process-card">
+          <div class="process-icon-circle">
+            <i class="fas fa-paper-plane"></i>
+          </div>
+          <div class="process-badge">STEP 5</div>
+          <h3>FINAL SUBMISSION</h3>
+          <p>APA submits candidates to the client.</p>
+          <div class="process-details">
+            <h4>Details:</h4>
+            <ul>
+              <li>Shares resumes with client</li>
+              <li>Provides candidate assessments</li>
+              <li>Client proceeds with selection process</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="cta-bottom">
+      <div class="fade-in-up">
+        <h2 style="margin-bottom: 30px; font-size: 3rem">
+          Ready to build your dream team?
+        </h2>
+        <p
+          style="
+            margin-bottom: 40px;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          Let's get started on finding the perfect fit for your organization
+          today.
+        </p>
+
+        <div
+          style="
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+          "
+        >
+          <a href="contact.html" class="btn btn-primary"
+            >Start Hiring Process</a
+          >
+          <a href="contact.html" class="btn btn-secondary">Talk to Us</a>
+        </div>
+      </div>
+
+      <div class="bottom-stats fade-in-up stagger-2">
+        <div class="glass-card">
+          <i
+            class="fas fa-history"
+            style="
+              font-size: 2.5rem;
+              color: var(--primary);
+              margin-bottom: 15px;
+            "
+          ></i>
+          <h3 style="font-size: 2.2rem; margin-bottom: 5px">30+</h3>
+          <p
+            style="
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              font-size: 0.9rem;
+            "
+          >
+            Years Experience
+          </p>
+        </div>
+        <div
+          class="glass-card"
+          style="border-color: var(--primary); box-shadow: var(--glow-shadow)"
+        >
+          <i
+            class="fas fa-chart-bar"
+            style="
+              font-size: 2.5rem;
+              color: var(--primary);
+              margin-bottom: 15px;
+            "
+          ></i>
+          <h3 style="font-size: 2.2rem; margin-bottom: 5px">98%</h3>
+          <p
+            style="
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              font-size: 0.9rem;
+            "
+          >
+            Success Rate
+          </p>
+        </div>
+        <div class="glass-card">
+          <i
+            class="fas fa-headset"
+            style="
+              font-size: 2.5rem;
+              color: var(--primary);
+              margin-bottom: 15px;
+            "
+          ></i>
+          <h3 style="font-size: 2.2rem; margin-bottom: 5px">24/7</h3>
+          <p
+            style="
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              font-size: 0.9rem;
+            "
+          >
+            Support Available
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-bg-glow"></div>
+      <div class="footer-content fade-in-up">
+        <div class="footer-brand">
+          <div class="nav-brand">
+            <img src="images/logo-2.png" alt="Logo" class="logo-img" />
+            <div class="brand-text">Amboseli HR</div>
+          </div>
+          <p>
+            Connecting exceptional talent with visionary organizations through
+            innovative recruitment solutions.
+          </p>
+          <div class="footer-quote">
+            <p>"Our Talent is Finding Yours"</p>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="employers.html">Employers</a></li>
+            <li><a href="candidates.html">Candidates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-services">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="about.html#services">Executive Search</a></li>
+            <li><a href="about.html#services">Recruitment Services</a></li>
+            <li><a href="about.html#services">Talent Acquisition</a></li>
+            <li><a href="about.html#services">Staffing Solutions</a></li>
+            <li><a href="about.html#services">HR Consulting</a></li>
+            <li><a href="about.html#services">Candidate Screening</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <p>
+              Amboseli Professional Associates Pvt. Ltd.<br />135&136, Raheja
+              Arcade, Koramangala<br />Bangalore - 560095
+            </p>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <p>+91 80 25534924<br />+91 80 25537162</p>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <p>info@amboselihr.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          &copy; 2026 Amboseli HR. All Rights Reserved.
+        </div>
+        <div class="footer-bottom-center">
+          Powered by <span class="text-primary">Akash Rajarathinam</span>
+        </div>
+        <div class="footer-bottom-right">
+          <a href="mailto:akash@atyourservice.ind.in"
+            >akash@atyourservice.ind.in</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+  </body>
+</html>

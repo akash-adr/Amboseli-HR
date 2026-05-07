@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amboseli HR - Recruitment & Human Resource Services</title>
+    <meta
+      name="description"
+      content="Premium HR Consultancy, Recruitment and Staffing Solutions. Our Talent is Finding Yours."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Home Specific Styles */
+      .hero-section {
+        height: 100vh;
+        min-height: 800px;
+        display: flex;
+        align-items: center;
+        background:
+          linear-gradient(rgba(5, 5, 5, 0.8), rgba(5, 5, 5, 0.9)),
+          url("images/32 Hidden Talent Examples [And How To Find Yours].jpg")
+            center/cover;
+        position: relative;
+      }
+      .hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+        width: 100%;
+      }
+      .hero-title {
+        font-size: 4.5rem;
+        line-height: 1.1;
+        margin-bottom: 20px;
+      }
+      .hero-stats-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .hero-stat-card {
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(20, 20, 20, 0.7);
+        border: 1px solid rgba(255, 138, 43, 0.2);
+        transition: all 0.3s ease;
+        text-align: center;
+      }
+      .hero-stat-card:hover {
+        box-shadow:
+          0 10px 30px rgba(255, 138, 43, 0.2),
+          inset 0 0 0 1px var(--primary);
+        transform: translateY(-5px);
+      }
+      .stat-icon {
+        background: var(--primary);
+        color: #fff;
+        width: 60px;
+        height: 60px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        box-shadow: 0 0 20px rgba(255, 138, 43, 0.5);
+      }
+      .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 5px;
+      }
+      .stat-text {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: #aaa;
+      }
+
+      .who-we-are {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+      .image-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      .image-grid img {
+        width: 100%;
+        border-radius: 20px;
+        border: 1px solid var(--border-color);
+        box-shadow: var(--glow-shadow);
+        object-fit: cover;
+        height: 250px;
+      }
+      .image-grid img:nth-child(even) {
+        transform: translateY(30px);
+      }
+
+      .stats-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+      .stat-card {
+        text-align: center;
+        padding: 50px 30px;
+      }
+      .stat-card .icon-wrapper {
+        width: 80px;
+        height: 80px;
+        background: var(--primary);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 20px;
+        font-size: 2.5rem;
+        color: #fff;
+        box-shadow: var(--glow-shadow);
+      }
+
+      .prof-dev {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 60px;
+        align-items: center;
+      }
+      .feature-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin: 40px 0;
+      }
+      .feature-card {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .feature-card i {
+        font-size: 1.8rem;
+        color: var(--primary);
+      }
+      .prof-image {
+        width: 100%;
+        border-radius: 30px;
+        border: 1px solid var(--border-color);
+        box-shadow: var(--glow-shadow-strong);
+      }
+
+      .cta-section {
+        text-align: center;
+        padding: 120px 5%;
+        background: radial-gradient(
+          circle at center,
+          rgba(255, 138, 43, 0.15) 0%,
+          rgba(5, 5, 5, 1) 70%
+        );
+        border-top: 1px solid var(--glass-border);
+        border-bottom: 1px solid var(--glass-border);
+      }
+
+      @media (max-width: 992px) {
+        .hero-content,
+        .who-we-are,
+        .prof-dev {
+          grid-template-columns: 1fr;
+        }
+        .stats-section {
+          grid-template-columns: 1fr;
+        }
+        .image-grid img:nth-child(even) {
+          transform: translateY(0);
+        }
+        .hero-section {
+          height: auto;
+          padding-top: 150px;
+          padding-bottom: 80px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fade-in-up">
+      <a href="index.html" class="nav-brand">
+        <img src="images/logo-2.png" alt="Logo" class="logo-img" />
+        <div class="brand-text"></div>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="employers.html">Employers</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="search.html" class="search-icon"
+          ><i class="fas fa-search"></i
+        ></a>
+        <a href="#" class="btn btn-primary">Get Started</a>
+      </div>
+
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="glow-bg" style="top: 20%; left: 10%"></div>
+      <div class="hero-content">
+        <div class="hero-text fade-in-left">
+          <h1 class="hero-title">
+            Recruitment<br />
+            Company,<br />
+            <span class="text-primary">Human<br />Resource<br />Services</span>
+          </h1>
+          <p style="margin-bottom: 15px; font-size: 1.2rem; color: #fff">
+            We are an established Human Resource Services Company designed to
+            provide human resource packages
+          </p>
+          <p
+            style="
+              margin-bottom: 40px;
+              color: var(--primary);
+              font-style: italic;
+              font-size: 1.3rem;
+            "
+          >
+            "Our Talent is Finding Yours"
+          </p>
+          <div style="display: flex; gap: 20px; flex-wrap: wrap">
+            <a href="#" class="btn btn-primary"
+              >Explore Services <i class="fas fa-arrow-right"></i
+            ></a>
+            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="hero-stats-grid fade-in-right stagger-2">
+          <div
+            class="glass-card hero-stat-card float-anim"
+            style="animation-delay: 0s"
+          >
+            <div class="stat-icon"><i class="fas fa-user-friends"></i></div>
+            <h3 class="stat-number">
+              <span class="counter" data-target="42">0</span>+
+            </h3>
+            <p class="stat-text">HAPPY CLIENTS</p>
+          </div>
+          <div
+            class="glass-card hero-stat-card float-anim"
+            style="animation-delay: 0.2s"
+          >
+            <div class="stat-icon"><i class="fas fa-award"></i></div>
+            <h3 class="stat-number">
+              <span class="counter" data-target="249">0</span>+
+            </h3>
+            <p class="stat-text">HAPPY PROFESSIONALS</p>
+          </div>
+          <div
+            class="glass-card hero-stat-card float-anim"
+            style="animation-delay: 0.4s"
+          >
+            <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+            <h3 class="stat-number">
+              <span class="counter" data-target="1100">0</span>+
+            </h3>
+            <p class="stat-text">NO. OF VISITS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section class="who-we-are-section">
+      <div class="who-we-are">
+        <div class="image-grid fade-in-left">
+          <img
+            src="images/32 Hidden Talent Examples [And How To Find Yours].jpg"
+            alt="Office 1"
+          />
+          <img
+            src="images/Elevate Your Employer Brand! 🌟.jpg"
+            alt="Office 2"
+          />
+          <img
+            src="images/Recruitment & Talent Search_ Magnifying Glass Focuses on Best Candidate.jpg"
+            alt="Office 3"
+          />
+          <img
+            src="images/Professional Resume & Custom Letterhead Template | Editable CV and Cover Letter Design | Printable Business Branding Stationery.jpg"
+            alt="Office 4"
+          />
+        </div>
+
+        <div class="who-we-are-text fade-in-right">
+          <div class="section-title">
+            <span
+              style="
+                color: var(--primary);
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+              "
+              >About Us</span
+            >
+          </div>
+          <h2 style="margin-bottom: 30px">Who We Are</h2>
+          <p style="margin-bottom: 20px">
+            We are an established Human Resource services & Recruitment &
+            Staffing company designed to provide human resource packages to the
+            specific needs of a few selected clients with dedicated commitment.
+            Our aim is to provide value added services and to excel in these
+            activities on a cost effective basis.
+          </p>
+          <p style="margin-bottom: 20px">
+            Over the years, we have built professional strength, competitive
+            efficiency, and harmonious working relationships to assist our
+            clients.
+          </p>
+          <p style="margin-bottom: 40px">
+            Amboseli Professional Associates Pvt. Ltd (Amboseli HR) is founded
+            in 1993 by Dr. A.D Monteiro who was United Nations Industrial
+            Development Adviser for many years & Yeshvir Monteiro who is a
+            Business Management specialist educated in prestigious universities
+            in the United States.
+          </p>
+          <p style="margin-bottom: 40px">
+            Amboseli is managed by Executive Director Mrs. Saritha Uday with a
+            team of young professionals.
+          </p>
+          <div style="display: flex; gap: 20px">
+            <a href="about.html" class="btn btn-primary">Learn More</a>
+            <a href="#" class="btn btn-secondary">Our Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section>
+      <div class="glow-bg" style="bottom: 0; right: 10%"></div>
+      <div class="stats-section">
+        <div class="glass-card stat-card fade-in-up stagger-1">
+          <div class="icon-wrapper"><i class="fas fa-users"></i></div>
+          <h2>42+</h2>
+          <p
+            style="
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              font-size: 0.9rem;
+            "
+          >
+            Happy Clients
+          </p>
+        </div>
+        <div class="glass-card stat-card fade-in-up stagger-2">
+          <div class="icon-wrapper"><i class="fas fa-award"></i></div>
+          <h2>249+</h2>
+          <p
+            style="
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              font-size: 0.9rem;
+            "
+          >
+            Happy Professionals
+          </p>
+        </div>
+        <div class="glass-card stat-card fade-in-up stagger-3">
+          <div class="icon-wrapper"><i class="fas fa-chart-line"></i></div>
+          <h2>1100+</h2>
+          <p
+            style="
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              font-size: 0.9rem;
+            "
+          >
+            No. of Visits
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Development -->
+    <section>
+      <div class="prof-dev">
+        <div class="fade-in-left">
+          <h2 style="margin-bottom: 20px; font-size: 2.8rem; line-height: 1.2">
+            AmboseliHR Professional
+            <span class="text-primary"
+              >Human Resource Development Programme</span
+            >
+          </h2>
+          <p style="font-size: 1.2rem">
+            The Directors of Amboseli have professional experience in MNC's in
+            India & in many African & Asian countries.
+          </p>
+
+          <div class="feature-grid">
+            <div class="glass-card feature-card">
+              <i class="fas fa-globe"></i>
+              <h4>Global Experience</h4>
+              <p style="font-size: 0.9rem">Africa & Asia</p>
+            </div>
+            <div class="glass-card feature-card">
+              <i class="fas fa-award"></i>
+              <h4>MNC Expertise</h4>
+              <p style="font-size: 0.9rem">Professional Team</p>
+            </div>
+            <div class="glass-card feature-card">
+              <i class="fas fa-bullseye"></i>
+              <h4>Dedicated Focus</h4>
+              <p style="font-size: 0.9rem">Client Success</p>
+            </div>
+            <div class="glass-card feature-card">
+              <i class="fas fa-suitcase"></i>
+              <h4>Industry Leaders</h4>
+              <p style="font-size: 0.9rem">Since 1993</p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 20px">
+            <a href="#" class="btn btn-primary">View Programs</a>
+            <a href="contact.html" class="btn btn-secondary">Talk to Experts</a>
+          </div>
+        </div>
+
+        <div class="fade-in-right">
+          <img
+            src="images/32 Hidden Talent Examples [And How To Find Yours].jpg"
+            alt="Professional Development"
+            class="prof-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section fade-in-up">
+      <h2 style="margin-bottom: 30px">Looking For The Right Talent?</h2>
+      <div
+        style="
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+          flex-wrap: wrap;
+        "
+      >
+        <a href="employers.html" class="btn btn-primary">Hire Talent</a>
+        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-bg-glow"></div>
+      <div class="footer-content fade-in-up">
+        <div class="footer-brand">
+          <div class="nav-brand">
+            <img src="images/logo-2.png" alt="Logo" class="logo-img" />
+            <div class="brand-text">Amboseli HR</div>
+          </div>
+          <p>
+            Connecting exceptional talent with visionary organizations through
+            innovative recruitment solutions.
+          </p>
+          <div class="footer-quote">
+            <p>"Our Talent is Finding Yours"</p>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="employers.html">Employers</a></li>
+            <li><a href="candidates.html">Candidates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-services">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="about.html#services">Executive Search</a></li>
+            <li><a href="about.html#services">Recruitment Services</a></li>
+            <li><a href="about.html#services">Talent Acquisition</a></li>
+            <li><a href="about.html#services">Staffing Solutions</a></li>
+            <li><a href="about.html#services">HR Consulting</a></li>
+            <li><a href="about.html#services">Candidate Screening</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <p>
+              Amboseli Professional Associates Pvt. Ltd.<br />135&136, Raheja
+              Arcade, Koramangala<br />Bangalore - 560095
+            </p>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <p>+91 80 25534924<br />+91 80 25537162</p>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <p>info@amboselihr.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          &copy; 2026 Amboseli HR. All Rights Reserved.
+        </div>
+        <div class="footer-bottom-center">
+          Powered by <span class="text-primary">Akash Rajarathinam</span>
+        </div>
+        <div class="footer-bottom-right">
+          <a href="mailto:akash@atyourservice.ind.in"
+            >akash@atyourservice.ind.in</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+  </body>
+</html>

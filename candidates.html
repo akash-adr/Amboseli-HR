@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Candidates - Amboseli HR</title>
+    <meta
+      name="description"
+      content="Explore better career opportunities with Amboseli HR."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Candidates Specific Styles */
+      .page-hero {
+        padding-top: 180px;
+        padding-bottom: 120px;
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        background:
+          linear-gradient(to bottom, rgba(5, 5, 5, 0.4), rgba(5, 5, 5, 1)),
+          url("images/Recruitment & Talent Search_ Magnifying Glass Focuses on Best Candidate.jpg")
+            center/cover;
+        position: relative;
+      }
+
+      .hero-container {
+        max-width: 900px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+      }
+
+      .breadcrumb {
+        color: var(--primary);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      .hero-title {
+        font-size: 4rem;
+        line-height: 1.1;
+        margin-bottom: 40px;
+      }
+
+      .hero-glass-card {
+        background: rgba(30, 30, 30, 0.4);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        padding: 40px;
+        width: 100%;
+        box-shadow:
+          0 20px 40px rgba(0, 0, 0, 0.5),
+          inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+      }
+
+      .opportunities-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+
+      .opp-card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .opp-card .icon-box {
+        width: 70px;
+        height: 70px;
+        background: rgba(255, 138, 43, 0.1);
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        color: var(--primary);
+        border: 1px solid var(--border-color);
+        transition: var(--transition);
+      }
+
+      .opp-card:hover .icon-box {
+        background: var(--primary);
+        color: #fff;
+        box-shadow: var(--glow-shadow);
+      }
+
+      .privacy-section {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 60px;
+        align-items: center;
+        background-color: var(--bg-secondary);
+      }
+
+      .privacy-bullets {
+        margin-top: 30px;
+      }
+
+      .privacy-bullets li {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        font-size: 1.1rem;
+      }
+
+      .privacy-bullets li i {
+        color: var(--primary);
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+
+      @media (max-width: 992px) {
+        .opportunities-grid {
+          grid-template-columns: 1fr;
+        }
+        .privacy-section {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fade-in-up">
+      <a href="index.html" class="nav-brand">
+        <img src="images/logo-2.png" alt="Logo" class="logo-img" />
+        <div class="brand-text"></div>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="employers.html">Employers</a>
+        <a href="candidates.html" class="active">Candidates</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="search.html" class="search-icon"
+          ><i class="fas fa-search"></i
+        ></a>
+        <a href="#" class="btn btn-primary">Get Started</a>
+      </div>
+
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div
+        class="glow-bg"
+        style="
+          top: 30%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0.5;
+        "
+      ></div>
+      <div class="hero-container fade-in-up">
+        <div class="breadcrumb">HOME / CANDIDATES</div>
+        <h1 class="hero-title">
+          Explore Better <span class="text-primary">Career</span><br /><span
+            class="text-primary"
+            >Opportunities</span
+          >
+        </h1>
+        <div class="hero-glass-card">
+          <h3 style="font-size: 1.4rem; margin-bottom: 20px">
+            Exploring new opportunities & better prospects
+          </h3>
+          <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 20px">
+            If you are considering a change for new challenges; exploring new
+            opportunities, and better prospects, mail us your updated resume to
+            <a
+              href="mailto:apply@amboselihr.com"
+              class="text-primary"
+              style="font-weight: 600"
+              >apply@amboselihr.com</a
+            >
+          </p>
+          <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 20px">
+            We maintain utmost confidentiality about the details of our
+            professionals. We do not reveal any information about them to our
+            clients without getting their permission.
+          </p>
+          <p style="font-size: 1.05rem; line-height: 1.8">
+            We appreciate if professionals can meet us in person or talk to us
+            over phone to know more about you and your expectations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Opportunities Section -->
+    <section>
+      <div class="section-header fade-in-up">
+        <div class="section-title">
+          <span
+            style="
+              color: var(--primary);
+              font-weight: 600;
+              text-transform: uppercase;
+              letter-spacing: 2px;
+            "
+            >Industries</span
+          >
+        </div>
+        <h2 style="margin-bottom: 20px">Explore Opportunities</h2>
+        <p style="max-width: 600px; margin: 0 auto">
+          Discover your next career move in these thriving sectors.
+        </p>
+      </div>
+
+      <div class="opportunities-grid fade-in-up stagger-1">
+        <div class="glass-card opp-card">
+          <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
+          <div>
+            <h3>IT & Software</h3>
+            <p style="color: var(--primary); font-weight: 500; margin-top: 5px">
+              Multiple Openings
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card opp-card">
+          <div class="icon-box"><i class="fas fa-cogs"></i></div>
+          <div>
+            <h3>Engineering</h3>
+            <p style="color: var(--primary); font-weight: 500; margin-top: 5px">
+              Multiple Openings
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card opp-card">
+          <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+          <div>
+            <h3>Finance & Consulting</h3>
+            <p style="color: var(--primary); font-weight: 500; margin-top: 5px">
+              Multiple Openings
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-card opp-card">
+          <div class="icon-box"><i class="fas fa-satellite-dish"></i></div>
+          <div>
+            <h3>Telecommunications</h3>
+            <p style="color: var(--primary); font-weight: 500; margin-top: 5px">
+              Multiple Openings
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 50px" class="fade-in-up">
+        <a href="contact.html" class="btn btn-primary"
+          >Contact Our Recruiters</a
+        >
+      </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section class="privacy-section">
+      <div class="glow-bg" style="top: 20%; left: -10%"></div>
+      <div class="fade-in-left">
+        <h2 style="margin-bottom: 20px; font-size: 2.8rem">
+          Your Privacy, <span class="text-primary">Our Priority</span>
+        </h2>
+        <p style="font-size: 1.1rem; margin-bottom: 20px">
+          We understand that exploring new career opportunities requires
+          discretion. Our commitment to your privacy is absolute.
+        </p>
+
+        <ul class="privacy-bullets">
+          <li>
+            <i class="fas fa-shield-alt"></i>
+            <div>
+              <h4 style="margin-bottom: 5px">Complete Confidentiality</h4>
+              <p>
+                Your details are securely stored and never shared without your
+                explicit consent.
+              </p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-user-lock"></i>
+            <div>
+              <h4 style="margin-bottom: 5px">Permission-Based Sharing</h4>
+              <p>
+                We only present your profile to clients after discussing the
+                specific opportunity with you.
+              </p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-compass"></i>
+            <div>
+              <h4 style="margin-bottom: 5px">Professional Guidance</h4>
+              <p>
+                Receive expert advice on resume building and interview
+                preparation.
+              </p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-globe"></i>
+            <div>
+              <h4 style="margin-bottom: 5px">Global Opportunities</h4>
+              <p>
+                Access to positions in MNCs across India, Africa, Asia, and
+                globally.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="fade-in-right">
+        <div
+          class="glass-card"
+          style="
+            padding: 50px 40px;
+            border-color: var(--primary);
+            box-shadow: var(--glow-shadow);
+          "
+        >
+          <h3
+            style="margin-bottom: 30px; font-size: 1.8rem; text-align: center"
+          >
+            Why Work With Us?
+          </h3>
+
+          <div
+            style="
+              margin-bottom: 25px;
+              display: flex;
+              align-items: center;
+              gap: 15px;
+            "
+          >
+            <div
+              style="
+                width: 50px;
+                height: 50px;
+                background: rgba(255, 138, 43, 0.1);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: var(--primary);
+                font-size: 1.5rem;
+              "
+            >
+              <i class="fas fa-history"></i>
+            </div>
+            <div>
+              <h4 style="margin: 0; font-size: 1.1rem">30+ Years Experience</h4>
+              <p style="margin: 0; font-size: 0.9rem">
+                Industry leading expertise
+              </p>
+            </div>
+          </div>
+
+          <div
+            style="
+              margin-bottom: 25px;
+              display: flex;
+              align-items: center;
+              gap: 15px;
+            "
+          >
+            <div
+              style="
+                width: 50px;
+                height: 50px;
+                background: rgba(255, 138, 43, 0.1);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: var(--primary);
+                font-size: 1.5rem;
+              "
+            >
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div>
+              <h4 style="margin: 0; font-size: 1.1rem">Global Network</h4>
+              <p style="margin: 0; font-size: 0.9rem">
+                Connections with top MNCs
+              </p>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 15px">
+            <div
+              style="
+                width: 50px;
+                height: 50px;
+                background: rgba(255, 138, 43, 0.1);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: var(--primary);
+                font-size: 1.5rem;
+              "
+            >
+              <i class="fas fa-hands-helping"></i>
+            </div>
+            <div>
+              <h4 style="margin: 0; font-size: 1.1rem">Dedicated Support</h4>
+              <p style="margin: 0; font-size: 0.9rem">
+                Guidance throughout the process
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-bg-glow"></div>
+      <div class="footer-content fade-in-up">
+        <div class="footer-brand">
+          <div class="nav-brand">
+            <img src="images/logo-2.png" alt="Logo" class="logo-img" />
+            <div class="brand-text">Amboseli HR</div>
+          </div>
+          <p>
+            Connecting exceptional talent with visionary organizations through
+            innovative recruitment solutions.
+          </p>
+          <div class="footer-quote">
+            <p>"Our Talent is Finding Yours"</p>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="employers.html">Employers</a></li>
+            <li><a href="candidates.html">Candidates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-services">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="about.html#services">Executive Search</a></li>
+            <li><a href="about.html#services">Recruitment Services</a></li>
+            <li><a href="about.html#services">Talent Acquisition</a></li>
+            <li><a href="about.html#services">Staffing Solutions</a></li>
+            <li><a href="about.html#services">HR Consulting</a></li>
+            <li><a href="about.html#services">Candidate Screening</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <p>
+              Amboseli Professional Associates Pvt. Ltd.<br />135&136, Raheja
+              Arcade, Koramangala<br />Bangalore - 560095
+            </p>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <p>+91 80 25534924<br />+91 80 25537162</p>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <p>info@amboselihr.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          &copy; 2026 Amboseli HR. All Rights Reserved.
+        </div>
+        <div class="footer-bottom-center">
+          Powered by <span class="text-primary">Akash Rajarathinam</span>
+        </div>
+        <div class="footer-bottom-right">
+          <a href="mailto:akash@atyourservice.ind.in"
+            >akash@atyourservice.ind.in</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+  </body>
+</html>
