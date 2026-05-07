@@ -15,15 +15,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Sticky Navbar
+  const navbarEl = document.querySelector('.navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbarEl.classList.add('sticky');
+    } else {
+      navbarEl.classList.remove('sticky');
+    }
+  });
+
   // Mobile Menu Toggle
   const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
   const navLinks = document.querySelector('.nav-links');
-  
-  if (mobileMenuBtn && navLinks) {
+
+  if (mobileMenuBtn) {
     mobileMenuBtn.addEventListener('click', () => {
       navLinks.classList.toggle('active');
       const icon = mobileMenuBtn.querySelector('i');
-      if (navLinks.classList.contains('active')) {
+      if(navLinks.classList.contains('active')) {
         icon.classList.remove('fa-bars');
         icon.classList.add('fa-times');
       } else {
