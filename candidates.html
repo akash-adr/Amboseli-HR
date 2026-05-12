@@ -137,7 +137,7 @@
     </style>
   </head>
   <body>
-        <!-- Navbar -->
+    <!-- Navbar -->
     <nav class="navbar fade-in-up">
       <a href="index.html" class="nav-brand">
         <img src="images/logo-2.png" alt="Logo" class="logo-img" />
@@ -150,7 +150,6 @@
         <a href="candidates.html">Candidates</a>
         <a href="about.html#services">Services</a>
         <a href="contact.html">Contact Us</a>
-        <a href="search.html" class="search-icon"><i class="fas fa-search"></i></a>
       </div>
 
       <div class="mobile-menu-btn">
@@ -274,36 +273,176 @@
     </section>
 
     <!-- Resume Upload Section -->
-    <section id="resume-upload" style="background: rgba(10,10,10,0.8); border-top: 1px solid rgba(255,138,43,0.1); border-bottom: 1px solid rgba(255,138,43,0.1);">
+    <section
+      id="resume-upload"
+      style="
+        background: rgba(10, 10, 10, 0.8);
+        border-top: 1px solid rgba(255, 138, 43, 0.1);
+        border-bottom: 1px solid rgba(255, 138, 43, 0.1);
+      "
+    >
       <div class="section-header fade-in-up">
         <div class="section-title">
-          <span style="color: var(--primary); font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Submit Resume</span>
+          <span
+            style="
+              color: var(--primary);
+              font-weight: 600;
+              text-transform: uppercase;
+              letter-spacing: 2px;
+            "
+            >Submit Resume</span
+          >
         </div>
         <h2 style="margin-bottom: 20px">Join Our Talent Pool</h2>
-        <p style="max-width: 600px; margin: 0 auto">Upload your resume to be considered for exclusive opportunities.</p>
+        <p style="max-width: 600px; margin: 0 auto">
+          Upload your resume to be considered for exclusive opportunities.
+        </p>
       </div>
 
-      <div class="glass-card fade-in-up" style="max-width: 800px; margin: 0 auto; padding: 40px; border-color: var(--primary); box-shadow: 0 0 30px rgba(255,138,43,0.1);">
-        <form style="display: flex; flex-direction: column; gap: 20px;">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-            <input type="text" placeholder="First Name" required style="width: 100%; padding: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 5px; color: var(--text-white);">
-            <input type="text" placeholder="Last Name" required style="width: 100%; padding: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 5px; color: var(--text-white);">
+      <div
+        class="glass-card fade-in-up"
+        style="
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 40px;
+          border-color: var(--primary);
+          box-shadow: 0 0 30px rgba(255, 138, 43, 0.1);
+        "
+      >
+        <form style="display: flex; flex-direction: column; gap: 20px">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+            <input
+              type="text"
+              placeholder="First Name"
+              required
+              style="
+                width: 100%;
+                padding: 15px;
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 5px;
+                color: var(--text-white);
+              "
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              required
+              style="
+                width: 100%;
+                padding: 15px;
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 5px;
+                color: var(--text-white);
+              "
+            />
           </div>
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-            <input type="email" placeholder="Email Address" required style="width: 100%; padding: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 5px; color: var(--text-white);">
-            <input type="tel" placeholder="Phone Number" style="width: 100%; padding: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 5px; color: var(--text-white);">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+            <input
+              type="email"
+              placeholder="Email Address"
+              required
+              style="
+                width: 100%;
+                padding: 15px;
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 5px;
+                color: var(--text-white);
+              "
+            />
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              style="
+                width: 100%;
+                padding: 15px;
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 5px;
+                color: var(--text-white);
+              "
+            />
           </div>
-          <input type="text" placeholder="Current Role / Expertise" required style="width: 100%; padding: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 5px; color: var(--text-white);">
-          
-          <div style="border: 2px dashed rgba(255,138,43,0.5); border-radius: 10px; padding: 40px; text-align: center; background: rgba(255,138,43,0.05); cursor: pointer; transition: var(--transition);" onmouseover="this.style.background='rgba(255,138,43,0.1)'" onmouseout="this.style.background='rgba(255,138,43,0.05)'">
-            <i class="fas fa-cloud-upload-alt" style="font-size: 3rem; color: var(--primary); margin-bottom: 15px;"></i>
-            <h4 style="margin-bottom: 10px;">Drag & Drop your resume here</h4>
-            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">Supported formats: PDF, DOC, DOCX (Max 5MB)</p>
-            <input type="file" id="resumeFile" style="display: none;" accept=".pdf,.doc,.docx">
-            <button type="button" class="btn" style="border: 1px solid var(--primary); color: var(--primary); background: transparent; padding: 10px 20px;" onclick="document.getElementById('resumeFile').click()">Browse Files</button>
+          <input
+            type="text"
+            placeholder="Current Role / Expertise"
+            required
+            style="
+              width: 100%;
+              padding: 15px;
+              background: rgba(255, 255, 255, 0.05);
+              border: 1px solid rgba(255, 255, 255, 0.1);
+              border-radius: 5px;
+              color: var(--text-white);
+            "
+          />
+
+          <div
+            style="
+              border: 2px dashed rgba(255, 138, 43, 0.5);
+              border-radius: 10px;
+              padding: 40px;
+              text-align: center;
+              background: rgba(255, 138, 43, 0.05);
+              cursor: pointer;
+              transition: var(--transition);
+            "
+            onmouseover="this.style.background = 'rgba(255,138,43,0.1)'"
+            onmouseout="this.style.background = 'rgba(255,138,43,0.05)'"
+          >
+            <i
+              class="fas fa-cloud-upload-alt"
+              style="
+                font-size: 3rem;
+                color: var(--primary);
+                margin-bottom: 15px;
+              "
+            ></i>
+            <h4 style="margin-bottom: 10px">Drag & Drop your resume here</h4>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 0.9rem;
+                margin-bottom: 15px;
+              "
+            >
+              Supported formats: PDF, DOC, DOCX (Max 5MB)
+            </p>
+            <input
+              type="file"
+              id="resumeFile"
+              style="display: none"
+              accept=".pdf,.doc,.docx"
+            />
+            <button
+              type="button"
+              class="btn"
+              style="
+                border: 1px solid var(--primary);
+                color: var(--primary);
+                background: transparent;
+                padding: 10px 20px;
+              "
+              onclick="document.getElementById('resumeFile').click()"
+            >
+              Browse Files
+            </button>
           </div>
 
-          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px; font-size: 1.1rem; margin-top: 10px;">Submit Application</button>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="
+              width: 100%;
+              padding: 15px;
+              font-size: 1.1rem;
+              margin-top: 10px;
+            "
+          >
+            Submit Application
+          </button>
         </form>
       </div>
     </section>
@@ -483,6 +622,15 @@
           <div class="footer-quote">
             <p>"Our Talent is Finding Yours"</p>
           </div>
+          <div class="whatsapp-container">
+            <a
+              href="https://wa.me/919880496807"
+              target="_blank"
+              class="btn-whatsapp"
+            >
+              <i class="fab fa-whatsapp"></i> WhatsApp Us
+            </a>
+          </div>
         </div>
 
         <div class="footer-links">
@@ -522,8 +670,14 @@
         <div class="footer-bottom-left">
           &copy; 2026 Amboseli HR. All Rights Reserved.
         </div>
-        <div class="footer-bottom-center">Powered by <span class="text-primary">Akash Rajarathinam</span> | <a href="mailto:akash@atyourservice.ind.in" style="color: #a0a0a0; text-decoration: none;">akash@atyourservice.ind.in</a></div>
-        
+        <div class="footer-bottom-center">
+          Powered by <span class="text-primary">Akash Rajarathinam</span> |
+          <a
+            href="mailto:akash@atyourservice.ind.in"
+            style="color: #a0a0a0; text-decoration: none"
+            >akash@atyourservice.ind.in</a
+          >
+        </div>
       </div>
     </footer>
 

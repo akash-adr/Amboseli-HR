@@ -563,3 +563,36 @@ mark {
   padding: 0 2px;
   border-radius: 3px;
 }
+
+/* WhatsApp Button */
+.whatsapp-container {
+  margin-top: 25px;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+  transition: var(--transition);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-whatsapp i {
+  font-size: 1.3rem;
+}
+
+.btn-whatsapp:hover {
+  background: linear-gradient(135deg, #1bd761, #0f8072);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+  transform: translateY(-3px);
+  color: #fff;
+}
